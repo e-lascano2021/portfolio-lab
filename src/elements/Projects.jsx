@@ -6,7 +6,7 @@ function ProjectsList (props) {
       <h1>Projects</h1> 
       <ul>
         {props.projects.map(project => 
-          <ProjectPreview title={project.title}/>
+          <ProjectPreview title={project.title} image={project.image}/>
         )}
       </ul>
     </>
