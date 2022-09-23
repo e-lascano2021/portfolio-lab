@@ -1,5 +1,3 @@
-
-
 function Resume() {
   return (
     <main id='resume'>
