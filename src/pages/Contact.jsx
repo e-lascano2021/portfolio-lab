@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <main>
+    <main id="contacts">
       <h1>Contact Me</h1>
       <h2>Number:</h2>
       <p>484-529-5229</p>

@@ -5,7 +5,7 @@ function ProjectDetails () {
   const location = useLocation()
   const project = findProject(location.pathname)
   return (
-    <main>
+    <main id="projects-details">
       <h1>{project.title}</h1>
       <p>{project.description}</p>
       <img src={project.image} alt={project.title}/>

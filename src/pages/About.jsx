@@ -1,6 +1,6 @@
 function About () {
   return (
-    <main>
+    <main id="about">
       <h1>Meet The Engineer:</h1>
       <p>paragraph 1</p>
 

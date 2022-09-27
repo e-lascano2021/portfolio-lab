@@ -3,7 +3,7 @@ import ProjectsList from "../elements/Projects"
 
 function Projects() {
   return (
-    <main>
+    <main id="projects">
       <ProjectsList projects={projects}/>
     </main>
   )
