@@ -7,7 +7,7 @@ function NavBar () {
     <Navbar bg='light' id="navbar">
       <Container fluid>
         <Link to='/' className='navbar-brand'>
-          Your Name
+          Emily Lascano
         </Link>
 
         <Nav>
