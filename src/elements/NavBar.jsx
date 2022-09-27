@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function NavBar () {
   return (
-    <Navbar bg='light'>
+    <Navbar bg='light' id="navbar">
       <Container fluid>
         <Link to='/' className='navbar-brand'>
           Your Name
