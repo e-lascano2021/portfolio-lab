@@ -1,5 +1,5 @@
 import { projects } from "../data/projects"
-import ProjectsList from "../elements/Projects"
+import ProjectsList from "../elements/ProjectsList"
 
 function Projects() {
   return (

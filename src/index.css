@@ -15,6 +15,7 @@ code {
     monospace;
 }
 
+/* navbar code below */
 #navbar {
   height: 50px;
   background-color: rgb(34, 251, 0);
@@ -33,4 +34,36 @@ code {
   width: 50%;
   display: flex;
   justify-content: space-between;
+}
+
+/* projects code below */
+#projects {
+  /* background-color: burlywood; */
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
+#projects-list > ul{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  border: rgb(34, 251, 0) solid 2px;
+  border-radius: 4%;
+  flex-direction: column;
+  align-items: center;
+  background-color:rgba(34, 255, 0, 0.827);
+}
+
+.card-img-top {
+  border-radius: 4%;
+  border-bottom: black solid 2px;
 }
