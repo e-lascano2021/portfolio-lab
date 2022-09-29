@@ -5,24 +5,34 @@ function ProjectDetails () {
   const location = useLocation()
   const project = findProject(location.pathname)
   return (
-    <main id="projects-details">
-      <h1>{project.title}</h1>
-      <p>{project.description}</p>
-      <img src={project.image} alt={project.title}/>
-      <a
-        href={project.repositoryLink}
-        target='_blank'
-        rel='noreferrer'
-      >
-        <button>Github</button>
-      </a>
-      <a
-        href={project.deployment}
-        target='_blank'
-        rel='noreferrer'
-      >
-        <button>Deployed Version</button>
-      </a>
+    <main id="project-details">
+      <div id="project-detail-img">
+        <img  src={project.image} alt={project.title}/>
+      </div>
+      <div id="project-info">
+        <div>
+          <h2>{project.title}</h2>
+          <p>{project.description}</p>
+        </div>
+      </div>
+      <section >
+        <div id="project-detail-bttns" >
+          <a
+            href={project.repositoryLink}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button>Github</button>
+          </a>
+          <a
+            href={project.deployment}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button>Deployed Version</button>
+          </a>
+        </div>
+      </section>
     </main>
   )
 }
