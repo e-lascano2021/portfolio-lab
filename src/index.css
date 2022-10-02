@@ -36,7 +36,6 @@ code {
 }
 
 .container-fluid {
-  background-color: aqua;
   margin: 0 10px;
   overflow: auto;
   display: flex;
@@ -66,7 +65,7 @@ code {
   border-radius: 4%;
   flex-direction: column;
   align-items: center;
-  background-color:rgba(34, 255, 0, 0.827);
+  background-color:rgba(0, 255, 0, 0.557);
 }
 
 .card-img-top {
@@ -77,13 +76,9 @@ code {
 /*! project details code below */
 
 #project-details {
-  /* background-color: pink; */
-  /* align-items: center; */
-
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(4, 25%);
-
 }
 
 #project-details > #project-detail-img {
@@ -101,12 +96,12 @@ code {
   border-radius: 4%;
   min-width: 35%;
   min-height: 35%;
-  border: rgb(34, 251, 0) solid 2px;
+  border: rgba(0, 255, 0, 0.721) solid 2px;
 }
 
 #project-details > section {
   display: grid;
-  border-top: 1px solid white;
+  border-top: 1px dashed white;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -126,16 +121,29 @@ section > #project-detail-bttns {
 }
 
 #project-info {
+  border-left: 2px dashed rgba(0, 255, 0, 0.503);
   display: grid;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
-  background-color: aqua;
 }
 
 #project-info > div {
   display: flex;
   flex-direction: column;
   justify-self: center;
+}
+
+/*! home page css */
+#home {
+  display: flex;
+  align-items: center;
+}
+
+#home > img {
+  max-height: 50%;
+  max-width: 40%;
+  border-radius: 45%;
+  border: 2px solid rgba(0, 255, 0, 0.503);
 }
