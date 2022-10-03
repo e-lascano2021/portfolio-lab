@@ -1,3 +1,6 @@
+import { about } from "../data/about.js"
+import FunFactsList from "../elements/FunFactsList.jsx"
+
 function About () {
   return (
     <main id="about">
@@ -5,7 +8,7 @@ function About () {
       <p>paragraph 1</p>
 
       <h1>More about Me:</h1>
-      <p>paragraph 2</p>
+      <FunFactsList facts={about.funFacts}/>
     </main>
   )
 }
