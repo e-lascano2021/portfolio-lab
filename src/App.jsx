@@ -7,6 +7,8 @@ import Projects from './pages/Projects'
 import NavBar from './elements/NavBar'
 import ProjectDetails from './pages/ProjectDetails'
 import Footer from './elements/Footer'
+import Technologies from './pages/Technologies'
+import TechnologyDetails from './pages/TechnologyDetails'
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
         <Route path="resume" element={<Resume/>}/>
         <Route path="projects" element={<Projects/>}/>
         <Route path="projects/:projectDetails" element={<ProjectDetails/>}/>
+        <Route path="technologies" element={<Technologies/>}/>
+        <Route path="technologies/:technologiesDetails" element={<TechnologyDetails/>}/>
       </Routes>
       <Footer/>
     </>

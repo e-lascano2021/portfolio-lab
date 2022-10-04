@@ -5,7 +5,7 @@ function Contact() {
       <h2>Number:</h2>
       <p>484-529-5229</p>
       <h2>Email</h2>
-      <p>emilas5678@gmail.com</p>
+      <p><a href="mailto:emilas5678@gmail.com">emilas5678@gmail.com</a></p>
     </main>
   )
 }
