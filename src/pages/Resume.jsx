@@ -9,6 +9,7 @@ function Resume() {
       <p>
         Click the link to download <a href='/Lascano_Resume.pdf' download>my resume</a>.
       </p>
+      <h2>Skills:</h2>
       <TechnologiesList technologies={technologies}/>
       </main>
   )

@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +7,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: large;
-  background-color: black;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7bUQGWqS4T5xlPKBoBETCaMR0LJytgDqrg&usqp=CAU");
+  background-size:cover;
   color: #ffffff;
 }
 
@@ -14,36 +16,28 @@ main {
   height: 90vh;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   width:100%
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 /*! navbar code below */
 #navbar {
-  display: flex;
-  margin: 0;
-  min-width: fit-content;
-  width: 100%;
-  height: 70px;
-  background-color: rgb(34, 251, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: rgb(0, 155, 21);
 }
 
-.container-fluid {
-  margin: 0 10px;
-  overflow: auto;
-  display: flex;
+.container-fluid * > *,
+.container-fluid > *{
+  color: rgb(255, 255, 255);
 }
 
 .navbar-nav {
   margin-left: auto;
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
 }
@@ -71,7 +65,7 @@ code {
 .card-img-top {
   border-radius: 4%;
   border-bottom: black solid 2px;
-}
+} 
 
 /*! project details code below */
 
@@ -121,6 +115,7 @@ section > #project-detail-bttns {
 }
 
 #project-info {
+  text-align: center;
   border-left: 2px dashed rgba(0, 255, 0, 0.503);
   display: grid;
   grid-column-start: 2;
@@ -130,6 +125,7 @@ section > #project-detail-bttns {
 }
 
 #project-info > div {
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -189,9 +185,23 @@ section > #project-detail-bttns {
   grid-row-start: 6;
 }
 
+/*? css for technologies page */
+#technologies-list > ul{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
 
+#technologies-list > ul > * {
+  margin: .5%;
+  color: rgba(255, 255, 255, 0.811);
+  text-decoration: none;
+}
 
-
+#technology-card {
+  padding: 4px;
+}
 
 
 
@@ -217,6 +227,4 @@ section > #project-detail-bttns {
     grid-column-end: 3;
     grid-row-start: 4;
   }  
-
-
 }

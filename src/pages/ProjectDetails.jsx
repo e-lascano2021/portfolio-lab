@@ -1,5 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import findProject from "../utilities/findProject"
+import TechnologiesList from '../elements/TechnologiesList'
 
 function ProjectDetails () {
   const location = useLocation()
@@ -16,6 +17,7 @@ function ProjectDetails () {
         </div>
       </div>
       <section >
+        <TechnologiesList technologies={project.technologies}/>
         <div id="project-detail-bttns" >
           <a
             href={project.repositoryLink}
