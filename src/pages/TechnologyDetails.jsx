@@ -10,7 +10,7 @@ function TechnologyDetails () {
 
   return(
     <main>
-      <h1>{technology}</h1>
+      <h1>Here are projects I've built using {technology}:</h1>
       <ProjectsList projects={projects}/>
     </main>
   )

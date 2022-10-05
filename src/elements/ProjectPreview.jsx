@@ -1,9 +1,9 @@
 import { Card }  from "react-bootstrap"
 import { Link } from "react-router-dom"
-import hyphenateWords from "../utilities/hyphenateWords"
+import createPath from "../utilities/createPath"
 
 function ProjectPreview (props) {
-  const path = hyphenateWords(props.title)
+  const path = createPath(props.title, "projects")
   return (
     <Card>
       <Card.Img variant='top' src={props.image} />

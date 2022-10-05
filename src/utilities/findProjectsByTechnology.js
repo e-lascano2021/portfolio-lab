@@ -2,8 +2,8 @@ import {projects} from "../data/projects.js"
 
 function findProjectsByTechnology (technology) {
   let projectsWithTechnology = []
-  projects.forEach((project, idx) => {
-    if (project.technologies.includes(technology)) {
+  projects.forEach(project => {
+    if (project.technologies.find(element => element.toLowerCase() === technology)) {
       projectsWithTechnology.push(project)
     }
   })
