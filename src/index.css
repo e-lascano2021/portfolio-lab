@@ -147,3 +147,76 @@ section > #project-detail-bttns {
   border-radius: 10%;
   border: 2px solid rgba(0, 255, 0, 0.503);
 }
+
+/*! about page css */
+#about {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, 20%);
+  text-align: center;
+}
+
+#about > * h2 {
+  font-size: 25px; 
+}
+
+#meetTheEngineer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#meetTheEngineer > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10%;
+
+}
+
+#facts-list {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+#books-list {
+  margin-top: 20%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+  /*? media query for about page */
+  #meetTheEngineer {
+    grid-column-end: 2;
+  }
+
+  #facts-list {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  
+  #books-list {
+    margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+  }  
+
+
+}
