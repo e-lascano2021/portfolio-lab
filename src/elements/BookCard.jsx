@@ -2,7 +2,7 @@ import { Card }  from "react-bootstrap"
 
 function BookCard (props) {
   return(
-    <Card>
+    <Card id="book-card">
       <Card.Body>
         <Card.Title>
           {props.book.title}

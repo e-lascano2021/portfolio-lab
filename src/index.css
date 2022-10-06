@@ -1,10 +1,9 @@
 
 body {
   margin: 0;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Times New Roman', Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: large;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7bUQGWqS4T5xlPKBoBETCaMR0LJytgDqrg&usqp=CAU");
   background-size:cover;
   color: #ffffff;
@@ -51,6 +50,7 @@ code {
 .card {
   display: flex;
   margin: 1.5%;
+  padding: 0;
   margin-bottom: 20px;
   border: rgb(34, 251, 0) solid 2px;
   border-radius: 4%;
@@ -96,8 +96,8 @@ code {
   justify-self: center;
   align-self: center;
   border-radius: 4%;
-  width: 200px;
-  height: 300px;
+  width: 170px;
+  height: 280px;
   object-fit: cover;
   border: rgba(0, 255, 0, 0.721) solid 2px;
 }
@@ -187,14 +187,28 @@ section > #project-detail-bttns {
   grid-row-end: 5;
 }
 
-#books-list {
-  margin-top: 20%;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 6;
+#facts-list > ul,
+#books-list > ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
-/*? css for technologies page */
+#books-list {
+  margin-top: 250px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+}
+
+#book-card, #fact-card {
+  height: 110px;
+  padding: 0;
+  width: 45%
+}
+
+/*! css for technologies page */
 #technologies-list > ul{
   flex-direction: row;
   flex-wrap: wrap;
@@ -210,14 +224,16 @@ section > #project-detail-bttns {
 
 #technology-card {
   padding: 4px;
+  width: 100px;
 }
 
+/*! css for technologies page */
 
 
 
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 670px) {
 
   /*? media query for about page */
   #meetTheEngineer {
@@ -231,7 +247,7 @@ section > #project-detail-bttns {
   }
   
   #books-list {
-    margin-top: 0;
+    margin-top: 40px;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
