@@ -57,11 +57,15 @@ code {
   flex-direction: column;
   align-items: center;
   background-color:rgba(0, 255, 0, 0.557);
+  width: 170px;
 }
 
 .card-img-top {
   border-radius: 4%;
-  border-bottom: black solid 2px;
+  border: black solid 2px;
+  width: 165px;
+  height: 220px;
+  object-fit: cover;
 } 
 
 /*! project details code below */
@@ -80,13 +84,21 @@ code {
   grid-row-end: 3;
 }
 
+#project-detail-img{
+  display: flex;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
 #project-detail-img > img {
   display: flex;
   justify-self: center;
   align-self: center;
   border-radius: 4%;
-  min-width: 35%;
-  min-height: 35%;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
   border: rgba(0, 255, 0, 0.721) solid 2px;
 }
 
