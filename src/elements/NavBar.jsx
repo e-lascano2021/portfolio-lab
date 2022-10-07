@@ -10,6 +10,7 @@ function NavBar () {
       expanded={expanded} 
       expand='lg'
       sticky='top'
+      bg="dark"
     >
       <Container fluid>
         <Link to='/' className='navbar-brand'>
@@ -28,20 +29,21 @@ function NavBar () {
             navbarScroll
           >
             <Link to='/about' className='nav-link' onClick={() => setExpanded(false)}>
-              About
+              {expanded ? "About" : <i class="fa-solid fa-info"></i>} 
             </Link>
             
             <Link to='/contact' className='nav-link' onClick={() => setExpanded(false)}>
-              Contact
+              {expanded ? "Contact" : <i class="fa-solid fa-phone"></i>}
             </Link>
             <Link to='/projects' className='nav-link' onClick={() => setExpanded(false)}>
-              Projects
+              {expanded ? "Projects" : <i class="fa-solid fa-list"></i>}
             </Link>
             <Link to='/resume' className='nav-link' onClick={() => setExpanded(false)}>
-              Resume
+              {expanded ? "Resume" : <i class="fa-solid fa-paperclip"></i>}
             </Link>
             <Link to='/technologies' className='nav-link' onClick={() => setExpanded(false)}>
-              Technologies
+              {expanded ? "Technologies " : <i class="fa-solid fa-microchip"></i>}
+              
             </Link>
           </Nav>
         </BootstrapNavBar.Collapse>

@@ -17,27 +17,30 @@ function Contact() {
   }
 
   return (
-    <main id="contacts">
-      <h1>Contact Me</h1>
-      <h2>Number:</h2>
-      <p>484-529-5229</p>
-      <h2>Email:</h2>
-      <p><a href="mailto:emilas5678@gmail.com">emilas5678@gmail.com</a></p>
+    <main id="contact">
+        <h1>Contact Me</h1>
+      <div id="contact-me">
+        <h6><bold>Number:</bold> 484-529-5229</h6>
+        <h6><bold>Email:</bold> <a href="mailto:emilas5678@gmail.com">emilas5678@gmail.com</a></h6>
+      </div>
 
 
       <form id="form" ref={form} onSubmit={sendEmail}>
-        <div className="field">
-          <label>name</label>
-          <input type="text" name="name" id="name"/>
-        </div>
-        <div className="field">
-          <label>message</label>
-          <input type="text" name="message" id="message"/>
-        </div>
-        <div className="field">
-          <label>contact</label>
-          <input type="text" name="contact" id="contact"/>
-        </div>
+        <h2>Send me an email!</h2>
+        <table>
+        <tr>
+          <th>Your Name:</th>
+          <th><input type="text" name="name" id="name"/></th>
+        </tr>
+        <tr>
+          <th>Message:</th>
+          <th><textarea type="text" name="message" id="message"/></th>
+        </tr>
+        <tr>
+          <th>Your Email:</th>
+          <th><input type="text" name="contact" id="contact"/></th>
+        </tr>
+        </table>
         <button type="submit">Send</button>
       </form>
 
