@@ -9,7 +9,7 @@ function TechnologyDetails () {
   const projects = findProjectsByTechnology(technology)
 
   return(
-    <main>
+    <main id="technology-detail">
       <h1>Here are projects I've built using {technology}:</h1>
       <ProjectsList projects={projects}/>
     </main>
